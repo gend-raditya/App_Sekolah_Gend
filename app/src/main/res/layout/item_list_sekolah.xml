@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvSekolah"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="#503883">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/imgSekolah"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sma1padang"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/tvNamaSekolah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Sekolah"
+                android:layout_toRightOf="@+id/imgSekolah"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tvNoTelpon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Telpon Sekolah"
+                android:layout_toRightOf="@id/imgSekolah"
+                android:layout_below="@id/tvNamaSekolah"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="italic"
+                android:textColor="@color/white"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
